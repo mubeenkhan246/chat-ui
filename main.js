@@ -1,12 +1,12 @@
  $(document).ready(function() {
   // Demo Users
   const users = [
-    { name: "Mubeen", image: "assets/user.png" },
-    { name: "Ali", image: "assets/user.png" },
-    { name: "Mansoor", image: "assets/user.png" },
-    { name: "Shahbaz", image: "assets/user.png" },
-    { name: "Umair", image: "assets/user.png" },
-    { name: "Saqib", image: "assets/user.png" }
+    { name: "Mubeen", subtitle:"This is some text...", image: "assets/user.png" },
+    { name: "Ali", subtitle:"This is some text...", image: "assets/user.png" },
+    { name: "Mansoor", subtitle:"This is some text...", image: "assets/user.png" },
+    { name: "Shahbaz", subtitle:"This is some text...", image: "assets/user.png" },
+    { name: "Umair", subtitle:"This is some text...", image: "assets/user.png" },
+    { name: "Saqib", subtitle:"This is some text...", image: "assets/user.png" }
   ];
 
   // Display users in the contact list
@@ -17,7 +17,7 @@
     users.forEach(user => {
       const listItem = $("<li>")
         .addClass("list-group-item")
-        .html(`<img src="${user.image}" alt="${user.name}" class="profile-image">${user.name}`);
+        .html(`<img src="${user.image}" alt="${user.name}" class="profile-image"><div>${user.name} <p class="user-subtitle">${user.subtitle}</p></div>`);
       listItem.data("user", user); // Attach user object to the list item
       contactList.append(listItem);
     });
@@ -32,7 +32,7 @@
 
     // Sample code to display a welcome message
     const welcomeMessage = $("<p>")
-      .addClass("text-center")
+      
       .text(`Welcome to the chat with ${user.name}`);
     chatMessages.append(welcomeMessage);
   }

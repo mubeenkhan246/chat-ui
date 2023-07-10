@@ -1,34 +1,184 @@
-  .container-fluid {
+body {
+  background: #222222;
+}
+.color-white {
+  color: #fff;
+}
+.bg-color-green {
+  background: #adf345;
+    border-radius: 8px;
+
+}
+.btn-outline-bg {
+  border-color: #adf345;
+  color: #adf345;
+  border-radius: 8px;
+}
+.space-btw button{
+  margin: 0 10px;
+}
+.inner-text-color li a {
+  color: #fff !important;
+}
+.nav-search-bar {
+  display: flex;
+  position: relative;
+  top: 5px;
+  padding-left: 50px;
+/*  min-width: 500px;*/
+}
+.inner-text-color .nav-item {
+  position: relative;
+  top: 10px;
+}
+@media (max-width: 1040px) {
+  .nav-search-bar {
+    display: none;
+  }
+  .inner-text-color .nav-item {
+  position: relative;
+  top: 0px;
+}
+}
+.nav-search-bar div {
+  position: absolute;
+  padding-top: 14px;
+ 
+}
+.nav-search-bar input {
+  width: 100%;
+   margin-left: 10px;
+}
+.navbar-light {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding-bottom: 22px;
+  margin-bottom: 35px;
+}
+
+
+li, h1, h2, h3 {
+  color: #ffffff;
+  background: transparent !important;
+}
+
+.container-fluid {
   margin-top: 20px;
 }
 
 #search-input {
   width: 100%;
   margin-bottom: 10px;
+  background: #222222;
+  height: 50px;
+  border-radius: 12px;
+  border:none;
+  padding-left: 20px;
+  outline: none;
+  color: #fff;
 }
 
 #chat-window {
   height: 400px;
+  background: transparent !important;
+
 }
 
 #chat-messages {
   height: 320px;
-  overflow-y: scroll;
+  overflow-y: auto;
+}
+#chat-messages p {
+  background: #fff !important;
+  color: #222;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  text-align: left;
+
 }
 
 .card-footer {
   display: flex;
+  background: #222;
+  border-radius: 12px !important;
+  margin: 0 30px;
 }
 
 #message-input {
   flex-grow: 1;
   margin-right: 10px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+#send-btn {
+  background: #ADF345;
+  border-radius: 50px !important;
+}
+.fa-paper-plane {
+  color: #fff;
 }
 
 .list-group-item {
   cursor: pointer;
+  display: flex;
+  border-color: #555;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.user-subtitle {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 12px;
 }
 .profile-image {
   width: 45px;
+  height: 45px;
   margin-right: 15px;
+}
+
+.bg-color {
+  background: #363636;
+  border-radius: 20px;
+  padding: 5px;
+}
+.my-profile {
+  text-align: center;
+}
+.my-profile-image {
+  width: 150px;
+
+}
+.my-profile-name {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.edit-profile-btn {
+  background: #adf345;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+}
+.active-bg {
+  background: rgba(255, 255, 255, 0.1) !important;
+
+}
+
+.profile-list .item {
+/*  position: relative;*/
+  border: none !important;
+/*  margin-left: 6px;*/
+}
+.profile-list .item span {
+  
+  position: relative;
+  left: -10px;
+  top: 2px;
+  padding-right: 10px;
 }
