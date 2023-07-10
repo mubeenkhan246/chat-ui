@@ -1,0 +1,34 @@
+  .container-fluid {
+  margin-top: 20px;
+}
+
+#search-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#chat-window {
+  height: 400px;
+}
+
+#chat-messages {
+  height: 320px;
+  overflow-y: scroll;
+}
+
+.card-footer {
+  display: flex;
+}
+
+#message-input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+.profile-image {
+  width: 45px;
+  margin-right: 15px;
+}
